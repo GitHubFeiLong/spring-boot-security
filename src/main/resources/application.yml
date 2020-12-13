@@ -1,0 +1,43 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: cfl-spring-security
+
+  datasource:
+    url: jdbc:mysql://47.108.31.41:3306/jd?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: l(=8gp_04h*&
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    minPoolSize: 3
+    maxPoolSize: 10
+    maxLifetime: 20000
+    borrowConnectionTimeout: 30
+    loginTimeout: 30
+    mainteanceInterval: 60
+    maxIdleTime: 60
+
+  ## flyway数据迁移
+  flyway:
+    #是否开启
+    enabled: false
+    locations: classpath:db/migration #迁移脚本的位置，默认db/migration
+    baseline-on-migrate: true
+    table: flyway_schema_history # 记录历史记录的表名称
+    out-of-order: false
+
+## mybatis配置
+mybatis:
+  mapper-locations: classpath:com/cfl/jd/dao/mapper/*.xml
+  #  type-aliases-package: com.example.entity
+  configuration:
+    #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 输出sql语句
+    map-underscore-to-camel-case: true #开启驼峰命名转换
+  # mybatis使用分页插件
+  pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+
