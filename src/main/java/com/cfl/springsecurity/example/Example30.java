@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 类描述：

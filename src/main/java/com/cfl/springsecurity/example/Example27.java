@@ -3,7 +3,6 @@ package com.cfl.springsecurity.example;
 import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 类描述：
@@ -19,6 +18,6 @@ public class Example27 {
         Argon2PasswordEncoder encoder = new Argon2PasswordEncoder();
         // 报错：Exception in thread "main" java.lang.NoClassDefFoundError: org/bouncycastle/crypto/params/Argon2Parameters$Builder
         String result = encoder.encode("myPassword");
-        assertTrue(encoder.matches("myPassword", result));
+//        assertTrue(encoder.matches("myPassword", result));
     }
 }

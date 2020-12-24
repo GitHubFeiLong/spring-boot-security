@@ -3,7 +3,6 @@ package com.cfl.springsecurity.example;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
 import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 类描述：
@@ -19,6 +18,6 @@ public class Example29 {
         SCryptPasswordEncoder encoder = new SCryptPasswordEncoder();
         // Caused by: java.lang.ClassNotFoundException: org.bouncycastle.crypto.generators.SCrypt
         String result = encoder.encode("myPassword");
-        assertTrue(encoder.matches("myPassword", result));
+//        assertTrue(encoder.matches("myPassword", result));
     }
 }

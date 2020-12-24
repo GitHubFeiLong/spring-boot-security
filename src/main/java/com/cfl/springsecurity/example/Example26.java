@@ -3,7 +3,6 @@ package com.cfl.springsecurity.example;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 类描述：
@@ -19,6 +18,6 @@ public class Example26 {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(16);
         // $2a$16$biJpLDOoV/GCJWmWx6EnZuQYTBDJqMgBPNzHWLTg6aXWyPcU6Jjfy
         String result = encoder.encode("myPassword");
-        assertTrue(encoder.matches("myPassword", result));
+//        assertTrue(encoder.matches("myPassword", result));
     }
 }

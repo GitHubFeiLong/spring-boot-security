@@ -3,7 +3,6 @@ package com.cfl.springsecurity.example;
 import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 类描述：
@@ -19,6 +18,6 @@ public class Example28 {
        Pbkdf2PasswordEncoder encoder = new Pbkdf2PasswordEncoder();
        // 0e76deddf59e945b8386ddd60030d9f3980298c522a284f50e1a003998b7c4ecc7ed4576c13feccd
        String result = encoder.encode("myPassword");
-       assertTrue(encoder.matches("myPassword", result));
+//       assertTrue(encoder.matches("myPassword", result));
     }
 }
