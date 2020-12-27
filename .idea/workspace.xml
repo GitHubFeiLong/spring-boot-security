@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93ef45d8-58c5-4103-abb5-0854a7de2111" name="Default Changelist" comment="" />
+    <list default="true" id="93ef45d8-58c5-4103-abb5-0854a7de2111" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cfl/springsecurity/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spring-security.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring-security.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cfl/springsecurity/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cfl/springsecurity/config/SecurityConfig.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../work/java/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\work\java\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1lbPCiPjkPta9R3YOpHgjxHHzzn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -15,10 +46,35 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspaces\GitHub\spring-security\src\main\java\com\cfl\springsecurity\config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-security" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cfl.springsecurity.SpringSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -32,18 +88,93 @@
       <updated>1607862691352</updated>
       <workItem from="1607862692659" duration="147000" />
       <workItem from="1608813869218" duration="8000" />
-      <workItem from="1608813963381" duration="634000" />
+      <workItem from="1608813963381" duration="1098000" />
+      <workItem from="1608816463429" duration="598000" />
+      <workItem from="1608895902793" duration="2843000" />
+      <workItem from="1609050955231" duration="330000" />
     </task>
+    <task id="LOCAL-00001" summary="springSecurity">
+      <created>1608816954580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608816954580</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="springSecurity" />
+    <option name="LAST_COMMIT_MESSAGE" value="springSecurity" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1607862831168">
+    <state x="558" y="75" key="CommitChangelistDialog2" timestamp="1608816953388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607862831168" />
+    <state x="558" y="75" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608816953388" />
+    <state x="512" y="272" key="FileChooserDialogImpl" timestamp="1608816382312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="512" y="272" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608816382312" />
+    <state width="1877" height="337" key="GridCell.Tab.0.bottom" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.0.center" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.0.left" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.0.right" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.2.bottom" timestamp="1608984398558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398558" />
+    <state width="1877" height="337" key="GridCell.Tab.2.center" timestamp="1608984398558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398558" />
+    <state width="1877" height="337" key="GridCell.Tab.2.left" timestamp="1608984398557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398557" />
+    <state width="1877" height="337" key="GridCell.Tab.2.right" timestamp="1608984398558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608984398558" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1608816384073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608816384073" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608817059703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608817059703" />
     <state x="334" y="180" key="new project wizard" timestamp="1607862838278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
