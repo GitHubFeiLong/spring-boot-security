@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
@@ -54,8 +55,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         super.configure(auth);
-        auth.jdbcAuthentication().dataSource(dataSource).withUser("dave")
-                .password("secret").roles("USER");
+        // 1.启用内存用户存储
+        auth.inMemoryAuthentication()
+                .withUser("user").password("123456").roles("USER").and()
+                .withUser("admin").password("admin").roles("ADMIN","USER");
+        // 2.JDBC users, authorities, groups, group_members, group_authorities,\,,,,,,,,,,\
+        auth.jdbcAuthentication()
+                .dataSource(dataSource);
+    }
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        super.configure(web);
     }
 
     /**
