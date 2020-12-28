@@ -1,7 +1,9 @@
 package com.cfl.springsecurity;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
 /**
@@ -17,8 +19,9 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
  * @Date 2020/12/27 15:14
  * @Version 1.0
  */
+@MapperScan(basePackages = {"com.cfl.springsecurity.mapper"}) // 可以不在mapper层添加注解
 @SpringBootApplication
-@EnableGlobalMethodSecurity(securedEnabled = true)
+//@EnableGlobalMethodSecurity(securedEnabled = true)
 public class SpringSecurityApplication {
 
     public static void main(String[] args) {
