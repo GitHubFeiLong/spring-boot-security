@@ -3,7 +3,6 @@ server:
 spring:
   application:
     name: cfl-spring-security
-
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/spring-security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
@@ -25,6 +24,12 @@ spring:
     baseline-on-migrate: true
     table: flyway_schema_history # 记录历史记录的表名称
     out-of-order: false
+
+  # spring mvc
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
 
 ## mybatis配置
 mybatis:

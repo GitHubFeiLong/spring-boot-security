@@ -19,7 +19,6 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
  * @Date 2020/12/27 15:14
  * @Version 1.0
  */
-@MapperScan(basePackages = {"com.cfl.springsecurity.mapper"}) // 可以不在mapper层添加注解
 @SpringBootApplication
 //@EnableGlobalMethodSecurity(securedEnabled = true)
 public class SpringSecurityApplication {

@@ -1,12 +1,7 @@
 package com.cfl.springsecurity.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 类描述：
@@ -14,38 +9,25 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @ClassName LoginController
  * @Description TODO
  * @Author msi
- * @Date 2020/12/28 21:48
+ * @Date 2020/12/29 22:55
  * @Version 1.0
  */
-@Controller
+@RestController
 public class LoginController {
-    private Logger logger = LoggerFactory.getLogger(LoginController.class);
 
-    @RequestMapping("/")
-    public String showHome() {
-        String name = SecurityContextHolder.getContext().getAuthentication().getName();
-        logger.info("当前登陆用户：" + name);
-
-        return "home.html";
+    @RequestMapping(value = "/login-success",produces = {"text/plain;charset=UTF-8"})
+    public String loginSuccess () {
+        return "登录成功";
     }
 
-    @RequestMapping("/login")
-    public String showLogin() {
-        return "login.html";
+    @RequestMapping(value = "/r/r1",produces = {"text/plain;charset=UTF-8"})
+    public String r1 () {
+        return "r1 资源";
     }
 
-    @RequestMapping("/admin")
-    @ResponseBody
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public String printAdmin() {
-        return "如果你看见这句话，说明你有ROLE_ADMIN角色";
+    @RequestMapping(value = "/r/r2",produces = {"text/plain;charset=UTF-8"})
+    public String r2 () {
+        return "r2 资源";
     }
 
-    @RequestMapping("/user")
-    @ResponseBody
-    @PreAuthorize("hasRole('ROLE_USER')")
-    public String printUser() {
-        return "如果你看见这句话，说明你有ROLE_USER角色";
-    }
 }
-
