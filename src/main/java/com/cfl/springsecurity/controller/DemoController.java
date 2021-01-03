@@ -20,7 +20,7 @@ public class DemoController {
     public String loginView () {
         return "login";
     }
-    @RequestMapping("/login")
+//    @RequestMapping("/login")
     @ResponseBody
     public String login () {
         return "登录成功";

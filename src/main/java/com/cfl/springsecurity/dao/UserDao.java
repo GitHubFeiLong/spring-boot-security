@@ -1,12 +1,15 @@
 package com.cfl.springsecurity.dao;
 
+import com.cfl.springsecurity.model.PermissionDto;
 import com.cfl.springsecurity.model.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 接口描述：
@@ -30,6 +33,23 @@ public class UserDao {
         }
 
         return list.get(0);
+    }
 
+    /**
+     * 根据用户id查询用户权限
+     * @param userId
+     * @return
+     */
+    public List<String> findPermissionsByUserId (String userId) {
+        String sql = "select * from t_permission where id in (\n" +
+                "\tselect permission_id from t_role_permission where role_id in (\n" +
+                "\t\tselect role_id from t_user_role where user_id = ?\n" +
+                "\t)\n" +
+                ")";
+        List<PermissionDto> list = jdbcTemplate.query(sql, new Object[]{userId}, new
+                BeanPropertyRowMapper<>(PermissionDto.class));
+
+        List<String> codes = list.parallelStream().map(PermissionDto::getCode).collect(Collectors.toList());
+        return codes;
     }
 }

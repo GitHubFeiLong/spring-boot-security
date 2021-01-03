@@ -26,10 +26,10 @@ spring:
     out-of-order: false
 
   # spring mvc
-  mvc:
-    view:
-      prefix: /
-      suffix: .html
+#  mvc:
+#    view:
+#      prefix: /
+#      suffix: .html
 
 ## mybatis配置
 mybatis:
