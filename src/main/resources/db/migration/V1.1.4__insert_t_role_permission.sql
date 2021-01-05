@@ -1,1 +1,1 @@
-insert into `t_role_permission`(`role_id`,`permission_id`) values ('1','1'),('1','2');
+insert into `t_role_permission`(`role_id`,`permission_id`) values ('1','1'),('2','2');
