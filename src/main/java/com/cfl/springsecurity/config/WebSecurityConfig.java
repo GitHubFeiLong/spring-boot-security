@@ -17,19 +17,19 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 /**
  * 类描述：
- *
+ * spring security 的配置
+ * EnableGlobalMethodSecurity注解 开启方法资源拦截
  * @ClassName WebSecurityConfig
- * @Description TODO
  * @Author msi
  * @Date 2020/12/29 22:40
  * @Version 1.0
  */
 @Configuration
-@EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)   // 开启方法资源拦截
+@EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
-     * 定义用户信息服务
+     * 定义用户信息服务，这里使用的内存方式保存用户信息。
      * @return
      */
 //    @Bean

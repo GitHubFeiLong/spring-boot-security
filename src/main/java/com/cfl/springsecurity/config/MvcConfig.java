@@ -9,6 +9,7 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
+        // 配置 “/” 地址，重定向到 “/login-view”
         registry.addViewController("/").setViewName("redirect:/login-view");
     }
 

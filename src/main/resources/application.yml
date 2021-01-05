@@ -12,7 +12,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/spring-security?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
-    password: l(=8gp_04h*&
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     minPoolSize: 3
     maxPoolSize: 10
@@ -30,13 +30,6 @@ spring:
     baseline-on-migrate: true
     table: flyway_schema_history # 记录历史记录的表名称
     out-of-order: false
-
-  # spring mvc
-#  mvc:
-#    view:
-#      prefix: /
-#      suffix: .html
-
 ## mybatis配置
 mybatis:
   mapper-locations: classpath:com/cfl/jd/dao/mapper/*.xml
