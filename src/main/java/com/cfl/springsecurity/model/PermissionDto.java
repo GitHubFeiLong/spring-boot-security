@@ -4,9 +4,8 @@ import lombok.Data;
 
 /**
  * 类描述：
- *
+ * 权限实体类
  * @ClassName PermissionDto
- * @Description TODO
  * @Author msi
  * @Date 2021/1/3 14:02
  * @Version 1.0

@@ -4,9 +4,8 @@ import lombok.Data;
 
 /**
  * 类描述：
- *
+ * 用户实体类
  * @ClassName UserDto
- * @Description TODO
  * @Author msi
  * @Date 2021/1/2 20:15
  * @Version 1.0

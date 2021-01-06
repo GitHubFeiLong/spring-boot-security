@@ -13,9 +13,8 @@ import java.util.List;
 
 /**
  * 类描述：
- *
+ * 获取登录用户的 UserDetails
  * @ClassName SpringDataUserDetailService
- * @Description TODO
  * @Author msi
  * @Date 2021/1/2 15:20
  * @Version 1.0

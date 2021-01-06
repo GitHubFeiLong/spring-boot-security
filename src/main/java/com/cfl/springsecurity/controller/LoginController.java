@@ -11,9 +11,8 @@ import java.util.Objects;
 
 /**
  * 类描述：
- *
+ * 资源
  * @ClassName LoginController
- * @Description TODO
  * @Author msi
  * @Date 2020/12/29 22:55
  * @Version 1.0
@@ -26,10 +25,6 @@ public class LoginController {
         // 提示具体用户登陆成功
 
         return getUserName() + "登录成功";
-    }
-//    @RequestMapping("/logout")
-    public String loginout () {
-        return getUserName() + "退出成功";
     }
 
     @RequestMapping(value = "/r/r1",produces = {"text/plain;charset=UTF-8"})
@@ -46,7 +41,7 @@ public class LoginController {
     }
 
     /**
-     *
+     * 获取登录用户信息
      * @return
      */
     private String getUserName () {
