@@ -1,0 +1,3 @@
+# SpringSecurity
+springsecurity的简单使用Demo
+单体项目使用比较方便
